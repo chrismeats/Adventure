@@ -21,6 +21,8 @@
 		DFCFF9F0197ED42E00FBAEA3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFCFF9D2197ED42E00FBAEA3 /* UIKit.framework */; };
 		DFCFF9F8197ED42E00FBAEA3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DFCFF9F6197ED42E00FBAEA3 /* InfoPlist.strings */; };
 		DFCFF9FA197ED42E00FBAEA3 /* AdventureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCFF9F9197ED42E00FBAEA3 /* AdventureTests.m */; };
+		DFCFFA06197F2F3D00FBAEA3 /* CheckMate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFCFFA05197F2F3D00FBAEA3 /* CheckMate.framework */; };
+		DFCFFA09197F5F9E00FBAEA3 /* CustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCFFA08197F5F9E00FBAEA3 /* CustomViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		DFCFF9F5197ED42E00FBAEA3 /* AdventureTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AdventureTests-Info.plist"; sourceTree = "<group>"; };
 		DFCFF9F7197ED42E00FBAEA3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DFCFF9F9197ED42E00FBAEA3 /* AdventureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdventureTests.m; sourceTree = "<group>"; };
+		DFCFFA05197F2F3D00FBAEA3 /* CheckMate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CheckMate.framework; sourceTree = "<group>"; };
+		DFCFFA07197F5F9E00FBAEA3 /* CustomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomViewController.h; sourceTree = "<group>"; };
+		DFCFFA08197F5F9E00FBAEA3 /* CustomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFCFFA06197F2F3D00FBAEA3 /* CheckMate.framework in Frameworks */,
 				DFCFF9D1197ED42E00FBAEA3 /* CoreGraphics.framework in Frameworks */,
 				DFCFF9D3197ED42E00FBAEA3 /* UIKit.framework in Frameworks */,
 				DFCFF9CF197ED42E00FBAEA3 /* Foundation.framework in Frameworks */,
@@ -101,6 +107,7 @@
 		DFCFF9CD197ED42E00FBAEA3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DFCFFA05197F2F3D00FBAEA3 /* CheckMate.framework */,
 				DFCFF9CE197ED42E00FBAEA3 /* Foundation.framework */,
 				DFCFF9D0197ED42E00FBAEA3 /* CoreGraphics.framework */,
 				DFCFF9D2197ED42E00FBAEA3 /* UIKit.framework */,
@@ -117,6 +124,8 @@
 				DFCFF9E0197ED42E00FBAEA3 /* Main.storyboard */,
 				DFCFF9E3197ED42E00FBAEA3 /* ViewController.h */,
 				DFCFF9E4197ED42E00FBAEA3 /* ViewController.m */,
+				DFCFFA07197F5F9E00FBAEA3 /* CustomViewController.h */,
+				DFCFFA08197F5F9E00FBAEA3 /* CustomViewController.m */,
 				DFCFF9E6197ED42E00FBAEA3 /* Images.xcassets */,
 				DFCFF9D5197ED42E00FBAEA3 /* Supporting Files */,
 			);
@@ -252,6 +261,7 @@
 				DFCFF9E5197ED42E00FBAEA3 /* ViewController.m in Sources */,
 				DFCFF9DF197ED42E00FBAEA3 /* AppDelegate.m in Sources */,
 				DFCFF9DB197ED42E00FBAEA3 /* main.m in Sources */,
+				DFCFFA09197F5F9E00FBAEA3 /* CustomViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +386,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Adventure/Adventure-Prefix.pch";
 				INFOPLIST_FILE = "Adventure/Adventure-Info.plist";
@@ -389,6 +403,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Adventure/Adventure-Prefix.pch";
 				INFOPLIST_FILE = "Adventure/Adventure-Info.plist";
